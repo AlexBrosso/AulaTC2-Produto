@@ -6,5 +6,5 @@
 </ul>
 
 <ng-container *ngIf="produtoSelecionado.name != ''">
-    <app-detalhe-produto [item]="produtoSelecionado"></app-detalhe-produto>
+    <app-detalhe-produto (fecharComponente)="executarFechamento()" [item]="produtoSelecionado"></app-detalhe-produto>
 </ng-container>
