@@ -11,5 +11,5 @@ export class AppComponent {
   }
   titulo : string = 'IFSP - São Carlos';
   mensagem : string = "Seja bem vindo a disciplina de TC2";
-  desenvolvedor : string = "Willian";
+  desenvolvedor : string = "Alex";
 }

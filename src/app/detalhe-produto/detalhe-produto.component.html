@@ -1,18 +1,18 @@
-<h3>{{item.name | titlecase}}</h3>
-<div><span>Preço: </span>{{item.price | currency}}</div>
-<div><span>Quantidade: </span>{{item.qtde}}</div>
+<h3>{{produto.name | titlecase}}</h3>
+<div><span>Preço: </span>{{produto.price | currency}}</div>
+<div><span>Quantidade: </span>{{produto.qtde}}</div>
 
-<h2 *ngIf="item.qtde > 0">Disponível</h2>
-<h2 *ngIf="item.qtde <= 0">Indisponível</h2>
+<h2 *ngIf="produto.qtde > 0">Disponível</h2>
+<h2 *ngIf="produto.qtde <= 0">Indisponível</h2>
 
 <hr>
 <div>
     <p>Nome</p>
-    <input type="text" [(ngModel)]="item.name">
+    <input type="text" [(ngModel)]="produto.name">
     <p>Preço</p>
-    <input type="number" [(ngModel)]="item.price">
+    <input type="number" [(ngModel)]="produto.price">
     <p>Quantidade</p>
-    <input type="number" [(ngModel)]="item.qtde">
+    <input type="number" [(ngModel)]="produto.qtde">
 </div>
 <br>
 <button (click)="fechar()">Fechar produto</button>

@@ -1,10 +1,10 @@
 <ul>
-    <li *ngFor="let produto of lista; let i = index" (click)="selecionar(produto)">
+    <li *ngFor="let produto of lista; let i = index" (click)="selecionar(i)">
         Item {{i}}: {{produto.name}} -
         <span *ngIf="produto.qtde > 0"><i>Disponível</i></span>
     </li>
 </ul>
 
-<ng-container *ngIf="produtoSelecionado.name != ''">
+<ng-container *ngIf="produtoSelecionado >= 0">
     <app-detalhe-produto (fecharComponente)="executarFechamento()" [item]="produtoSelecionado"></app-detalhe-produto>
 </ng-container>

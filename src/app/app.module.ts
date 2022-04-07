@@ -10,7 +10,7 @@ import { ListaProdutosComponent } from './lista-produtos/lista-produtos.componen
   declarations: [
     AppComponent,
     DetalheProdutoComponent,
-    ListaProdutosComponent
+    ListaProdutosComponent,
   ],
   imports: [
     BrowserModule,
